@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Анастасия Пушная](https://up.htmlacademy.ru/adaptive/28/user/1554339).
-* Наставник: [Сергей Зубов] (https://htmlacademy.ru/profile/serj).
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
