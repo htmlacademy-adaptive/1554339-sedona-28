@@ -130,9 +130,9 @@
             <label class="mark-cell__label" for="redrocks">Красные скалы</label>
           </div>
         </fieldset>
-        <fieldset class="feedback__text text">
-          <h2 class="text__title title">Опишите свои эмоции:</h2>
-          <textarea class="text__input" name="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
+        <fieldset class="feedback__text rewiew">
+          <h2 class="rewiew__title title">Опишите свои эмоции:</h2>
+          <textarea class="rewiew__input" name="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button class="feedback__button button" type="submit">Отправить отзыв</button>
         <div class="feedback__note">* — обязательные поля</div>
@@ -144,7 +144,7 @@
     <div class="main-footer__wrapper">
       <div class="main-footer__hashtag hashtag">
         <div class="hashtag__title visually-hidden">Хештег #visitsedona</div>
-        <a class="hashtag__phone" href="#">
+        <a class="hashtag__link" href="#">
           #visitsedona
         </a>
       </div>
@@ -193,24 +193,24 @@
   </footer>
 
   <section class="popup">
-    <div class="popup__error">
+    <div class="popup__warning">
       <h2 class="popup__title title">
         Что-то пошло не так!
       </h2>
       <p class="popup__description description">
         Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
       </p>
-      <button class="popup__button popup__button--error button" type="submit">Ок</button>
+      <button class="popup__button popup__button--error-size button" type="submit">Ок</button>
     </div>
 
-    <div class="popup__luck">
+    <div class="popup__success">
       <h2 class="popup__title title">
         Ваш отзыв отправлен!
       </h2>
       <p class="popup__description description">
         Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
       </p>
-      <button class="popup__button popup__button--luck button" type="submit">Закрыть окно</button>
+      <button class="popup__button popup__button--luck-size button" type="submit">Закрыть окно</button>
     </div>
 
   </section>
