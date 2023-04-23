@@ -4,35 +4,36 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
 
   <header class="main-header">
     <a class="logo" href="#">
-      <img class="logo-image" src="img/logo.svg" width="185" height="96" alt="Седона">
+      <img class="logo__image" src="img/logo.svg" width="185" height="96" alt="Седона">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">
+            <a class="main-nav__link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a href="catalog.html">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">
               Фото и видео
             </a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a href="#">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="#">
               Форма отзыва
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="#">
+            <a class="main-nav__link" href="#">
               HTML Academy
             </a>
           </li>
@@ -44,7 +45,7 @@
   <main class="main-container">
     <h1 class="visually-hidden">Седона</h1>
     <div class="form-intro intro">
-      <img class="intro__img" src="img/sedona.svg" height="39" width="229" alt="Надпись Седона.">
+      <img class="intro__image" src="img/sedona.svg" height="39" width="229" alt="Надпись Седона.">
     </div>
 
     <section class="feedback">
@@ -59,35 +60,35 @@
       <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="feedback__name name">
           <h2 class="name__title title">Представьтесь:</h2>
-          <div class="name__item">
+          <div class="name__item form-cell">
             <label for="name">Имя<sup>*</sup>:</label>
-            <input id="name" type="text" value="Пётр" required>
+            <input class="form-cell__input" id="name" type="text" value="Пётр" required>
           </div>
-          <div class="name__item">
+          <div class="name__item form-cell">
             <label for="surname">Фамилия<sup>*</sup>:</label>
-            <input id="surname" type="text" value="Пустота" required>
+            <input class="form-cell__input" id="surname" type="text" value="Пустота" required>
           </div>
-          <div class="name__item">
+          <div class="name__item form-cell">
             <label for="patronymic">Отчество:</label>
-            <input id="patronymic" type="text" value="Викторович">
+            <input class="form-cell__input" id="patronymic" type="text" value="Викторович">
           </div>
         </fieldset>
-        <fieldset class="feedback__contacts contacts">
-          <h2 class="contacts__title title">Контактная информация:</h2>
-          <div class="contacts__item">
+        <fieldset class="feedback__contacts contact">
+          <h2 class="contact__title title">Контактная информация:</h2>
+          <div class="contact__item form-cell form-cell--contact">
             <label for="phone">Контактный телефон<sup>*</sup>:</label>
-            <input id="phone" type="tel" value="" placeholder="Введите телефон" required>
-            <div class="contacts__svg">
+            <input class="form-cell__input" id="phone" type="tel" value="" placeholder="Введите телефон" required>
+            <div class="form-cell__svg">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18">
                 <path fill="#010101"
                   d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1C7.6 18 0 10.4 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8Z" />
               </svg>
             </div>
           </div>
-          <div class="contacts__item">
+          <div class="contact__item form-cell form-cell--contact">
             <label for="email">Электронная почта<sup>*</sup>:</label>
-            <input id="email" type="email" value="" placeholder="Введите e-mail" required>
-            <div class="contacts__svg">
+            <input  class="form-cell__input" id="email" type="email" value="" placeholder="Введите e-mail" required>
+            <div class="form-cell__svg">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="none" viewBox="0 0 16 12">
                 <path fill="#000"
                   d="M8 8c-.3 0-.5-.1-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7c-.5.2-.7.3-1 .3Zm7-8H1C.5 0 0 .5 0 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1Z" />
@@ -95,43 +96,43 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="feedback__mark filter">
-          <h2 class="filter__title title">Ваше общее впечатление:</h2>
-          <div class="filter__item">
-            <input type="radio" name="mark" value="good" id="good" checked>
-            <label for="good">Скорее положительное</label>
+        <fieldset class="feedback__emotions emotion">
+          <h2 class="emotion__title title">Ваше общее впечатление:</h2>
+          <div class="emotion__item mark-cell">
+            <input class="mark-cell__input" type="radio" name="mark" value="good" id="good" checked>
+            <label class="mark-cell__label" for="good">Скорее положительное</label>
           </div>
-          <div class="filter__item">
-            <input type="radio" name="mark" value="bad" id="bad">
-            <label for="bad">Скорее отрицательное</label>
+          <div class="emotion__item mark-cell">
+            <input class="mark-cell__input" type="radio" name="mark" value="bad" id="bad">
+            <label class="mark-cell__label" for="bad">Скорее отрицательное</label>
           </div>
-          <div class="filter__item">
-            <input type="radio" name="mark" value="nothing" id="nothing">
-            <label for="nothing">Затрудняюсь ответить</label>
-          </div>
-        </fieldset>
-        <fieldset class="feedback__place filter">
-          <h2 class="filter__title title">Посещенные достропримечательности:</h2>
-          <div class="filter__item filter__item--checkbox">
-            <input type="checkbox" name="devilsbridge" value="devilsbridge" id="devilsbridge" checked>
-            <label for="devilsbridge">Мост Дьявола</label>
-          </div>
-          <div class="filter__item filter__item--checkbox">
-            <input type="checkbox" name="mountbell" value="mountbell" id="mountbell" checked>
-            <label for="mountbell">Гора-Колокол</label>
-          </div>
-          <div class="filter__item filter__item--checkbox">
-            <input type="checkbox" name="slidepark" value="slidepark" id="slidepark" checked>
-            <label for="slidepark">Слайд-парк</label>
-          </div>
-          <div class="filter__item filter__item--checkbox">
-            <input type="checkbox" name="redrocks" value="redrocks" id="redrocks">
-            <label for="redrocks">Красные скалы</label>
+          <div class="emotion__item mark-cell">
+            <input class="mark-cell__input" type="radio" name="mark" value="nothing" id="nothing">
+            <label class="mark-cell__label" for="nothing">Затрудняюсь ответить</label>
           </div>
         </fieldset>
-        <fieldset class="feedback__text text">
-          <h2 class="text__title title">Опишите свои эмоции:</h2>
-          <textarea name="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
+        <fieldset class="feedback__place place">
+          <h2 class="place__title title">Посещенные достропримечательности:</h2>
+          <div class="place__item mark-cell mark-cell--checkbox">
+            <input class="mark-cell__input" type="checkbox" name="devilsbridge" value="devilsbridge" id="devilsbridge" checked>
+            <label class="mark-cell__label" for="devilsbridge">Мост Дьявола</label>
+          </div>
+          <div class="place__item mark-cell mark-cell--checkbox">
+            <input class="mark-cell__input" type="checkbox" name="mountbell" value="mountbell" id="mountbell" checked>
+            <label class="mark-cell__label" for="mountbell">Гора-Колокол</label>
+          </div>
+          <div class="place__item mark-cell mark-cell--checkbox">
+            <input class="mark-cell__input" type="checkbox" name="slidepark" value="slidepark" id="slidepark" checked>
+            <label class="mark-cell__label" for="slidepark">Слайд-парк</label>
+          </div>
+          <div class="place__item mark-cell mark-cell--checkbox">
+            <input class="mark-cell__input" type="checkbox" name="redrocks" value="redrocks" id="redrocks">
+            <label class="mark-cell__label" for="redrocks">Красные скалы</label>
+          </div>
+        </fieldset>
+        <fieldset class="feedback__text rewiew">
+          <h2 class="rewiew__title title">Опишите свои эмоции:</h2>
+          <textarea class="rewiew__input" name="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button class="feedback__button button" type="submit">Отправить отзыв</button>
         <div class="feedback__note">* — обязательные поля</div>
@@ -143,7 +144,7 @@
     <div class="main-footer__wrapper">
       <div class="main-footer__hashtag hashtag">
         <div class="hashtag__title visually-hidden">Хештег #visitsedona</div>
-        <a class="hashtag__phone" href="#">
+        <a class="hashtag__link" href="#">
           #visitsedona
         </a>
       </div>
@@ -152,7 +153,7 @@
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="#">
               <span class="visually-hidden">ВКонтакте.</span>
-              <svg class="social__footer__svg" xmlns="http://www.w3.org/2000/svg" width="25" height="15" fill="none">
+              <svg class="social__svg" xmlns="http://www.w3.org/2000/svg" width="25" height="15" fill="none">
                 <path fill-rule="evenodd"
                   d="M24.12 1.8c.16-.54 0-.94-.8-.94H20.7c-.67 0-.98.34-1.15.73 0 0-1.33 3.2-3.22 5.27-.61.6-.9.8-1.23.8-.16 0-.41-.2-.41-.75v-5.1c0-.66-.19-.95-.74-.95H9.82c-.42 0-.67.3-.67.59 0 .62.95.76 1.04 2.51v3.8c0 .83-.15.98-.48.98-.9 0-3.06-3.2-4.34-6.88-.25-.72-.5-1-1.18-1H1.57c-.75 0-.9.34-.9.73 0 .68.89 4.07 4.14 8.55 2.17 3.06 5.23 4.72 8 4.72 1.68 0 1.88-.37 1.88-1v-2.32c0-.74.16-.88.7-.88.38 0 1.05.19 2.6 1.66 1.79 1.75 2.08 2.54 3.08 2.54h2.63c.75 0 1.12-.37.9-1.1-.23-.72-1.08-1.77-2.2-3.02-.62-.71-1.54-1.48-1.82-1.86-.39-.5-.28-.71 0-1.15 0 0 3.2-4.42 3.54-5.93Z"
                   clip-rule="evenodd" />
@@ -162,7 +163,7 @@
           <li class="social__item">
             <a class="social__link social__link--telegram" href="#">
               <span class="visually-hidden">Телеграм.</span>
-              <svg class="social__footer__svg" xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none">
+              <svg class="social__svg" xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none">
                 <path
                   d="M16.79.96.84 7.1c-1.09.44-1.08 1.05-.2 1.32l4.1 1.28 9.47-5.98c.44-.27.85-.13.52.17l-7.68 6.93-.28 4.22c.41 0 .6-.2.83-.41l1.99-1.94 4.13 3.06c.77.42 1.31.2 1.5-.71l2.72-12.8c.28-1.1-.43-1.61-1.16-1.28Z" />
               </svg>
@@ -171,7 +172,7 @@
           <li class="social__item">
             <a class="social__link social__link--youtube" href="#">
               <span class="visually-hidden">Ютуб.</span>
-              <svg class="social__footer__svg" xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="none">
+              <svg class="social__svg" xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="none">
                 <path
                   d="M18.94.36H3.51C1.65.36.33 1.95.33 3.76v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.39-3.4ZM7.99 12.89V4.82l7.34 4.04-7.34 4.03Z" />
               </svg>
@@ -192,24 +193,24 @@
   </footer>
 
   <section class="popup">
-    <div class="popup__error">
+    <div class="popup__warning">
       <h2 class="popup__title title">
         Что-то пошло не так!
       </h2>
       <p class="popup__description description">
         Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
       </p>
-      <button class="popup__button button" type="submit">Ок</button>
+      <button class="popup__button popup__button--error-size button" type="submit">Ок</button>
     </div>
 
-    <div class="popup__luck">
+    <div class="popup__success">
       <h2 class="popup__title title">
         Ваш отзыв отправлен!
       </h2>
       <p class="popup__description description">
         Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
       </p>
-      <button class="popup__button button" type="submit">Ок</button>
+      <button class="popup__button popup__button--luck-size button" type="submit">Закрыть окно</button>
     </div>
 
   </section>
