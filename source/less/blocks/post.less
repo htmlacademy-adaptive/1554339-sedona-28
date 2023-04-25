@@ -6,6 +6,22 @@
   &:first-of-type {
     border-top: 1px solid #e5e5e5;
   }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
+  &--main {
+    @media (min-width: @tablet-width) {
+      width: 648px;
+      height: 400px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1200px;
+      height: 400px;
+    }
+  }
 }
 
 .post__title,
@@ -15,4 +31,19 @@
 
 .post__description {
   text-transform: none;
+}
+
+.post__img {
+  width: 280px;
+  height: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    height: 267px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    height: 267px;
+  }
 }

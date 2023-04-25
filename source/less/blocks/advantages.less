@@ -17,6 +17,11 @@
   &--dark-background {
     background-color: #eeeeee;
   }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 100%;
+  }
 }
 
 .advantages__list-svg {
@@ -25,4 +30,15 @@
 
 .advantages__list-image {
   padding: 0;
+}
+
+.advantages__item {
+  min-height: 256px;
+
+  &--wide {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      width: 100%;
+    }
+  }
 }

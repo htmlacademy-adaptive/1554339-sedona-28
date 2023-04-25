@@ -1,3 +1,8 @@
+.feedback {
+  @media (min-width: @tablet-width) {
+    margin: 0 40px;
+  }
+}
 
 .feedback__wrapper {
   padding: 36px 20px 28px;
@@ -26,11 +31,17 @@
 }
 
 .feedback__button {
-  margin-top: 56px;
+  margin: 56px 20px 0;
 }
 
 .feedback__note {
   margin-bottom: 22px;
   color: #33333399;
   text-align: right;
+}
+
+.feedback__container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
