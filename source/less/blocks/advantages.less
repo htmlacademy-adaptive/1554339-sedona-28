@@ -3,7 +3,8 @@
 }
 
 .advantages__list {
-  .clear-list;
+  list-style-type: none;
+  margin: 0;
   padding: 24px 18px 28px;
 
   &--base-background {
@@ -17,6 +18,12 @@
   &--dark-background {
     background-color: #eeeeee;
   }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .advantages__list-svg {
@@ -25,4 +32,13 @@
 
 .advantages__list-image {
   padding: 0;
+}
+
+.advantages__item {
+  &--wide {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      width: 100%;
+    }
+  }
 }

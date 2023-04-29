@@ -3,5 +3,20 @@
 }
 
 .page__body {
+  background-color: #e7e5e5;
+  width: 100%;
+}
+
+.page__wrapper {
+  background-color: #ffffff;
+  margin: 0 auto;
   width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
 }
