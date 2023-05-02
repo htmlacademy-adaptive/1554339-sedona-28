@@ -1,15 +1,39 @@
 .main-nav {
-  background-color: #81b3d2;
   margin: 0 auto;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
   text-align: center;
-  color: #ffffff;
   position: relative;
+  font-weight: 700;
+
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 18px;
+    line-height: 26px;
+    background-color: #81b3d2;
+    color: #ffffff;
+    z-index: 2;
+  }
 
   @media (min-width: @tablet-width) {
     background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav__wrapper {
+  @media (min-width: @tablet-width) {
+    width: 306px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 478px;
   }
 }
 
@@ -18,52 +42,101 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: space-around;
   }
 }
 
 .main-nav__item {
-  margin-bottom: 1px;
   padding: 17px 0 12px 0;
 
-  &:last-of-type {
-    margin-bottom: 0;
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid #01010133;
+    border-bottom: 1px solid #ffffff33;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 153px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 239px;
+  }
+
+  &-main {
+    border-top: none;
+  }
+
+  &--html-academy {
+    border-bottom: none;
+  }
+}
+
+.main-nav--closed .main-nav__item {
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
 }
 
 .main-nav__link {
   color: #ffffff;
 
+
   @media (min-width: @tablet-width) {
     color: #000000;
+  }
+
+  &--active {
+    @media (min-width: @tablet-width) {
+      color: #766357;
+    }
   }
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 17px;
+  right: 20px;
   padding: 0;
   width: 22px;
   height: 22px;
   border: none;
   cursor: pointer;
   outline: none;
-  background-color: #81b3d2;
-
-  &::after {
-    content: "";
-    background-image: url("../../img/signs/icon-cross.svg");
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 
   @media (min-width: @tablet-width) {
     display: none;
   }
+}
+
+.main-nav--opened .main-nav__toggle::before {
+  content: "";
+  background-image: url("../../img/signs/icon-cross.svg");
+  top: 17px;
+  right: 20px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #81b3d2;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  height: 4px;
+  box-shadow: 0 5px 0 0 #81b3d2, 0 10px 0 0 #81b3d2;
+  background-color: #ffffff;
+}
+
+.main-nav--nojs {
+  position: relative;
+  font-size: 18px;
+  line-height: 26px;
+  background-color: #81b3d2;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.main-nav--nojs .main-nav__item {
+  display: block;
 }
