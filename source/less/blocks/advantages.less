@@ -1,5 +1,9 @@
 .advantages__wrapper {
   padding: 32px 18px 53px;
+
+  @media (min-width: @tablet-width) {
+    padding: 48px 124px 56px;
+  }
 }
 
 .advantages__description {
@@ -32,6 +36,10 @@
 
 .advantages__list-svg {
   padding: 23px 18px 46px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .advantages__list-image {
@@ -44,5 +52,11 @@
       display: flex;
       width: 100%;
     }
+  }
+}
+
+.advantages__title br {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }

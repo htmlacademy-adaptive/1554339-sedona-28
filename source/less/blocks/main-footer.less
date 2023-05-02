@@ -1,10 +1,17 @@
 .main-footer__wrapper {
-  padding: 33px 0;
+  margin-top: 8px;
+  padding: 33px 18px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 43px 36px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 36px 120px;
   }
 }
 
@@ -18,4 +25,9 @@
 .main-footer__copyright {
   display: flex;
   justify-content: center;
+}
+
+.main-footer__social {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }

@@ -4,16 +4,45 @@
   justify-content: center;
   min-height: 58px;
   margin-top: 32px;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+    margin-top: 44px;
+  }
 }
 
 .booking__title {
   margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 18px;
+  }
 }
 
 .booking__wrapper {
   padding: 39px 18px 49px;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 100px 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .booking__img {
   width: 100%;
+}
+
+.booking__description {
+  @media (min-width: @tablet-width) {
+    max-width: 520px;
+  }
+}
+
+.booking__description br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
 }
