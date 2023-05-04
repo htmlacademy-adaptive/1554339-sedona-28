@@ -2,46 +2,117 @@
   @media (min-width: @tablet-width) {
     margin: 0 40px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 96px;
+  }
 }
 
 .feedback__wrapper {
   padding: 36px 20px 28px;
   border: none;
   border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 51px;
+    border-bottom: none;
+  }
 }
 
 .feedback__name {
-  padding: 24px 20px 39px;
+  padding: 24px 20px 23px;
   border: none;
   border-bottom: 1px solid #e5e5e5;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 30px;
+    border-bottom: none;
+  }
 }
 
 .feedback__contacts {
-  padding: 24px 20px 34px;
+  padding: 24px 20px 23px;
   border: none;
   border-bottom: 1px solid #e5e5e5;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 30px;
+    border-bottom: none;
+  }
 }
 
 .feedback__emotions,
-.feedback__place,
-.feedback__text {
-  padding: 24px 20px 24px;
+.feedback__place {
+  padding: 24px 20px 8px;
   border: none;
   border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.feedback__text {
+  padding: 24px 20px 0;
+  border: none;
 }
 
 .feedback__button {
   margin: 56px 20px 0;
+
+  @media (min-width: @tablet-width) {
+    width: 320px;
+  }
 }
 
 .feedback__note {
   margin-bottom: 22px;
   color: #33333399;
   text-align: right;
+  margin-top: 3px;
+  margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+  }
 }
 
 .feedback__container {
+  position: relative;
+
   @media (min-width: @tablet-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &::before {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      width: 1px;
+      background-color: #dbdbdb;
+      top: 20px;
+      bottom: 40px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+}
+
+.feedback__title {
+  margin-bottom: 24px;
+}
+
+.feedback__buttons-area {
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    width: 809px;
+    margin: 0 auto;
   }
 }
