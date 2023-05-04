@@ -1,6 +1,7 @@
 .post {
   list-style-type: none;
   padding: 24px 20px 25px;
+  position: relative;
 
   &:first-of-type {
     @media (max-width: @mobile-width-only) {
@@ -25,6 +26,15 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    background-color: #0000004d;
+    position: absolute;
+    bottom: 0;
+    color: #ffffff;
   }
 }
 
