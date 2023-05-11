@@ -96,45 +96,38 @@
   top: 17px;
   right: 20px;
   padding: 0;
-  width: 22px;
+  width: 23px;
   height: 22px;
   border: none;
   cursor: pointer;
   outline: none;
+  background-color: transparent;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
-.main-nav--opened .main-nav__toggle::before {
-  content: "";
+.main-nav--opened .main-nav__toggle {
   background-image: url("../../img/signs/icon-cross.svg");
-  top: 17px;
-  right: 20px;
-  position: absolute;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #81b3d2;
 }
 
-.main-nav--closed .main-nav__toggle::before {
+.main-nav--closed .main-nav__toggle::after {
   content: "";
   position: absolute;
-  top: 17px;
-  right: 20px;
+  top: 0;
+  left: 0;
+  background-color: #81b3d2;
   height: 4px;
-  box-shadow: 0 5px 0 0 #81b3d2, 0 10px 0 0 #81b3d2;
-  background-color: #ffffff;
+  width: 23px;
+  box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
 }
 
 .main-nav--nojs {
   position: relative;
-  font-size: 18px;
-  line-height: 26px;
-  background-color: #81b3d2;
-  color: #ffffff;
-  z-index: 2;
+  z-index: 1;
 }
 
 .main-nav--nojs .main-nav__item {
