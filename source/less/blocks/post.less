@@ -1,13 +1,17 @@
 .post {
   list-style-type: none;
-  padding: 25px 20px 27px;
+  padding: 25px 18px 27px;
   position: relative;
 
-  &:first-of-type {
-    @media (max-width: @mobile-width-only) {
-      border-top: 1px solid #e5e5e5;
-    }
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid #e5e5e5;
   }
+
+  // &:first-of-type {
+  //   @media (max-width: @mobile-width-only) {
+  //     border-top: 1px solid #e5e5e5;
+  //   }
+  // }
 
   @media (min-width: @tablet-width) {
     padding: 0;

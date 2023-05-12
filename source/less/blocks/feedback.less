@@ -4,7 +4,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 96px;
+    margin: 0 120px 50px;
   }
 }
 
@@ -14,43 +14,12 @@
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 51px;
+    padding: 64px 120px 82px;
     border-bottom: none;
   }
-}
 
-.feedback__name {
-  padding: 24px 20px 23px;
-  border: none;
-  border-bottom: 1px solid #e5e5e5;
-  margin: 0;
-
-  @media (min-width: @tablet-width) {
-    padding-right: 30px;
-    border-bottom: none;
-  }
-}
-
-.feedback__contacts {
-  padding: 24px 20px 23px;
-  border: none;
-  border-bottom: 1px solid #e5e5e5;
-  margin: 0;
-
-  @media (min-width: @tablet-width) {
-    padding-left: 30px;
-    border-bottom: none;
-  }
-}
-
-.feedback__emotions,
-.feedback__place {
-  padding: 24px 20px 8px;
-  border: none;
-  border-bottom: 1px solid #e5e5e5;
-
-  @media (min-width: @tablet-width) {
-    border-bottom: none;
+  @media (min-width: @desktop-width) {
+    padding: 112px 200px 42px;
   }
 }
 
@@ -60,10 +29,16 @@
 }
 
 .feedback__button {
-  margin: 56px 20px 0;
+  margin: 23px 20px 0;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
     width: 320px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    width: 384px;
   }
 }
 
@@ -73,11 +48,11 @@
   text-align: right;
   margin-top: 3px;
   margin-right: 20px;
+  font-size: 12px;
 
   @media (min-width: @tablet-width) {
-    position: absolute;
-    bottom: -25px;
-    right: 0;
+    margin: 0;
+    font-size: 14px;
   }
 }
 
@@ -87,6 +62,11 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-gap: 100px;
   }
 
   &::before {
@@ -106,13 +86,31 @@
 
 .feedback__title {
   margin-bottom: 24px;
+  font-size: 18px;
+
+  @media (min-width: @tablet-width) {
+    letter-spacing: 1px;
+    font-size: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .feedback__buttons-area {
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 20px 72px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 809px;
     margin: 0 auto;
+    padding-bottom: 22px;
   }
 }
