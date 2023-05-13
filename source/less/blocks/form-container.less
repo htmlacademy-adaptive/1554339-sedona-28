@@ -160,11 +160,8 @@
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
-    // margin: 0 77px;
     grid-gap: 5px 40px;
-    // padding: ;
     padding: 12px 25px 30px 56px;
-    // display: flex;
     justify-content: space-between;
   }
 
@@ -199,6 +196,7 @@
   cursor: pointer;
   padding: 18px;
   margin-top: 5px;
+  outline: none;
 
   @media (min-width: @tablet-width) {
     margin-top: 7px;
@@ -206,6 +204,48 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 10px 96px 0;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 768px;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus:not(:invalid) {
+    padding: 14px;
+    background-color: #ffffff;
+    border: solid 4px #e5e5e5;
+  }
+}
+
+.form-container--for-tick .form-container__item:hover {
+  .form-cell__decoration-input {
+    background-color: #e5e5e5;
+  }
+
+  .form-cell__input:checked + .form-cell__decoration-input::after {
+    background-color: #333333;
+  }
+
+  .form-cell__input--checkbox:checked + .form-cell__decoration-input::after {
+    background-image: url("../../img/signs/tick.svg");
+  }
+}
+
+.form-container--for-tick .form-container__item:active {
+  .form-cell__decoration-input {
+    background-color: #d5d5d5;
+  }
+
+  .form-cell__input:checked + .form-cell__decoration-input::after {
+    background-color: #3333334d;
+  }
+
+  .form-cell__input--checkbox:checked + .form-cell__decoration-input::after {
+    background-image: url("../../img/signs/tick.svg");
+    opacity: 30%;
   }
 }

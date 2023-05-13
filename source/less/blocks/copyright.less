@@ -1,11 +1,35 @@
+.copyright svg {
+  fill: #000000;
+}
+
 .copyright {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:hover svg {
+    fill: #81b3d2;
+  }
+
+  // &:focus {
+  // }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
+  &:active svg {
+    fill: #b3b3b3;
+  }
 }
 
 .copyright__text {
   text-align: center;
   margin-right: 12px;
-  // margin-top: 7px;
 }

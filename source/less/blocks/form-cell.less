@@ -12,9 +12,20 @@
   z-index: 3;
   cursor: pointer;
   padding: 5px 14px 2px;
+  outline: none;
 
   @media (min-width: @desktop-width) {
     padding: 8px 14px 3px;
+  }
+
+  &--status:hover {
+    background-color: #e5e5e5;
+  }
+
+  &--status:focus:not(:invalid) {
+    padding-left: 10px;
+    background-color: #ffffff;
+    border: solid 4px #e5e5e5;
   }
 }
 

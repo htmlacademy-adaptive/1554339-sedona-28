@@ -67,15 +67,15 @@
               <h2 class="form-container__title form-container__title--simple form-container__title--name title ">Представьтесь:</h2>
               <div class="form-container__item form-cell">
                 <label class="form-cell__title" for="name">Имя<sup>*</sup>:</label>
-                <input class="form-cell__field" id="name" type="text" value="Пётр" required>
+                <input class="form-cell__field form-cell__field--status" id="name" type="text" placeholder="Пётр" required>
               </div>
               <div class="form-container__item form-cell">
                 <label class="form-cell__title" for="surname">Фамилия<sup>*</sup>:</label>
-                <input class="form-cell__field" id="surname" type="text" value="Пустота" required>
+                <input class="form-cell__field form-cell__field--status" id="surname" type="text" placeholder="Пустота" required>
               </div>
               <div class="form-container__item form-cell">
                 <label class="form-cell__title" for="patronymic">Отчество:</label>
-                <input class="form-cell__field" id="patronymic" type="text" value="Викторович">
+                <input class="form-cell__field form-cell__field--status" id="patronymic" type="text" placeholder="Викторович">
               </div>
             </fieldset>
             <fieldset class="feedback__fieldset form-container">
@@ -83,7 +83,7 @@
               <div class="form-container__item form-cell">
                 <label class="form-cell__title" for="phone">Контактный телефон<sup>*</sup>:</label>
                 <div class="form-cell__wrapper">
-                  <input class="form-cell__field" id="phone" type="tel" value="" placeholder="Введите телефон" required>
+                  <input class="form-cell__field form-cell__field--status" id="phone" type="tel" value="" placeholder="Введите телефон" required>
                   <a class="form-cell__svg">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18">
                       <path fill="#010101"
@@ -95,7 +95,7 @@
               <div class="form-container__item form-cell">
                 <label class="form-cell__title" for="email">Электронная почта<sup>*</sup>:</label>
                 <div class="form-cell__wrapper">
-                  <input class="form-cell__field" id="email" type="email" value="" placeholder="Введите e-mail"
+                  <input class="form-cell__field form-cell__field--status" id="email" type="email" value="" placeholder="Введите e-mail"
                     required>
                   <a class="form-cell__svg">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="none" viewBox="0 0 16 12">
@@ -211,7 +211,7 @@
           <div class="copyright__text">Разработано</div>
           <a class="copyright__link" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35">
-              <path fill="#000"
+              <path
                 d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z" />
             </svg>
           </a>
