@@ -1,0 +1,24 @@
+.popup-screen--opened {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  background-color: #0000004d;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-screen--closed .popup {
+  display: none;
+}
+
+.popup-screen__window {
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 400px;
+  }
+}
