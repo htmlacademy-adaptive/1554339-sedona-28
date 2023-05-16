@@ -1,33 +1,24 @@
-.social-icon {
-  background-color: #81b3d2;
+.social-icon__link {
   width: 48px;
   height: 48px;
+  background-color: #81b3d2;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
   &:hover {
     background-color: #669ec0;
   }
-
-  // &:focus {
-  // }
 
   &:active {
     background-color: #5496bd;
   }
 }
 
-.social-icon__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .social-icon__svg {
   fill: #ffffff;
+}
 
-  &:active {
-    fill: #ffffff4d;
-  }
+.social-icon__link:active .social-icon__svg {
+  fill: #ffffff4d;
 }

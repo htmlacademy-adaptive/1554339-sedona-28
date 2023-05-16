@@ -1,56 +1,51 @@
-.form-cell__field {
+.form-field-tick__input-area {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   font-family: "PT Sans", "Arial", sans-serif;
-  background-color: #f2f2f2;
   min-height: 58px;
   width: 100%;
   margin: 0;
   border: 0;
   position: relative;
   z-index: 3;
-  // cursor: pointer;
+  cursor: pointer;
   padding: 5px 14px 2px;
   outline: none;
+  text-transform: none;
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  padding-left: 62px;
+}
+
+.form-container-tick__item {
+  min-height: 20px;
+  margin: 4px 0;
+
+  &--radio {
+    margin: 4px 0;
+  }
+}
+
+.form-container-tick__title {
+  margin-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
 
   @media (min-width: @desktop-width) {
-    padding: 8px 14px 3px;
-  }
-
-  &--status:hover {
-    background-color: #e5e5e5;
-  }
-
-  &--status:focus:not(:invalid) {
-    padding-left: 10px;
-    background-color: #ffffff;
-    border: solid 4px #e5e5e5;
+    margin-bottom: 30px;
   }
 }
 
-.form-cell__title {
-  margin-left: 16px;
-}
-
-.form-cell__wrapper {
-  position: relative;
-}
-
-.form-cell__svg {
-  position: absolute;
+.form-field-tick {
   display: flex;
-  justify-content: center;
   align-items: center;
-  right: 0;
-  top: 0;
-  width: 58px;
-  background-color: #e6e6e6;
-  height: 100%;
-  z-index: 4;
 }
 
-.form-cell__decoration-input {
+.form-field-tick__decoration-input {
   position: absolute;
   width: 46px;
   height: 46px;
@@ -63,7 +58,7 @@
   }
 }
 
-.form-cell__input:checked + .form-cell__decoration-input::after {
+.form-field-tick__input:checked + .form-field-tick__decoration-input::after {
   content: "";
   position: absolute;
   background-color: #333333;
@@ -76,7 +71,7 @@
   transform: translate(-50%, -50%);
 }
 
-.form-cell__input--checkbox:checked + .form-cell__decoration-input::after {
+.form-field-tick__input--checkbox:checked + .form-field-tick__decoration-input::after {
   content: "";
   position: absolute;
   background-image: url("../img/signs/tick.svg");

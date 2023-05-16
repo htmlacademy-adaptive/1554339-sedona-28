@@ -1,6 +1,23 @@
 .intro__image {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    height: 350px;
+    width: 461px;
+  }
+
+  &--form {
+    height: 39px;
+
+    @media (min-width: @tablet-width) {
+      height: 78px;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 80px;
+    }
+  }
 }
 
 .intro {
@@ -15,6 +32,18 @@
     padding: 77px 19px 91px;
   }
 
+  &--form {
+    padding: 52px 19px 67px;
+
+    @media (min-width: @tablet-width) {
+      padding: 95px 19px 117px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 101px 19px 120px;
+    }
+  }
+
   &::before {
     content: "";
     background-image: url("../img/signs/decoration.svg");
@@ -25,19 +54,3 @@
     width: 100%;
   }
 }
-
-  // &--form {
-  //   height: 39px;
-  //   width: 100%;
-  //   margin: 52px auto 67px;
-
-  //   @media (min-width: @tablet-width) {
-  //     margin: 95px auto 117px;
-  //     height: 78px;
-  //   }
-
-  //   @media (min-width: @desktop-width) {
-  //     margin: 101px auto 63px;
-  //     height: 78px;
-  //   }
-  // }

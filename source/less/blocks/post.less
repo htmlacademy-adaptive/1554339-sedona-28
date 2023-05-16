@@ -6,19 +6,6 @@
   @media (max-width: @mobile-width-only) {
     border-top: 1px solid #e5e5e5;
   }
-
-  @media (min-width: @tablet-width) {
-    padding: 0;
-    width: 324px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 400px;
-  }
-
-  &--main {
-    width: 100%;
-  }
 }
 
 .post__wrapper {
@@ -54,7 +41,7 @@
 .post__counter {
   font-weight: 700;
   margin-left: 14px;
-  margin-top: 2px;
+  line-height: 1;
 
   @media (min-width: @tablet-width) {
     margin-left: 10px;
@@ -91,9 +78,9 @@
 }
 
 .post__like {
-  padding-top: 11px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  padding: 28px 0 31px;
 }
 
 .post__like svg {

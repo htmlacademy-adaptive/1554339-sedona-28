@@ -16,67 +16,17 @@
     padding: 25px 0 23px;
   }
 
-  &:last-of-type {
+  &--rewiew {
     border-bottom: none;
+  }
 
-    @media (min-width: @tablet-width) {
-      // padding-top: 16px;
-    }
+  &:last-of-type {
+    // border-bottom: none;
 
     @media (min-width: @desktop-width) {
       padding-top: 25px;
     }
   }
-}
-
-.form-container--for-tick {
-  padding-top: 21px;
-  padding-bottom: 20px;
-
-  @media (min-width: @tablet-width) {
-    border-bottom: none;
-    padding: 0;
-    padding-top: 28px;
-    padding-bottom: 10px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-top: 33px;
-  }
-}
-
-.form-container--for-tick .form-cell__field {
-  text-transform: none;
-  background-color: inherit;
-  display: flex;
-  align-items: center;
-  padding-left: 62px;
-}
-
-.form-container--for-tick .form-container__item {
-  min-height: 20px;
-  margin: 4px 0;
-
-  &--radio {
-    margin: 4px 0;
-  }
-}
-
-.form-container--for-tick .form-container__title {
-  margin-bottom: 14px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 20px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: 30px;
-  }
-}
-
-.form-container--for-tick .form-cell {
-  display: flex;
-  align-items: center;
 }
 
 .form-container__title {
@@ -193,9 +143,8 @@
   border: 0;
   position: relative;
   z-index: 3;
-  // cursor: pointer;
   padding: 18px;
-  margin-top: 5px;
+  // margin-top: 5px;
   outline: none;
   resize: none;
 
@@ -222,30 +171,47 @@
   }
 }
 
-.form-container--for-tick .form-container__item:hover {
-  .form-cell__decoration-input {
+.form-container-tick {
+  padding-top: 21px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+    padding: 0;
+    padding-top: 28px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 33px;
+  }
+}
+
+.form-container-tick__item:hover {
+  .form-field-tick__decoration-input {
     background-color: #e5e5e5;
   }
 
-  .form-cell__input:checked + .form-cell__decoration-input::after {
+  .form-field-tick__input:checked + .form-field-tick__decoration-input::after {
     background-color: #333333;
   }
 
-  .form-cell__input--checkbox:checked + .form-cell__decoration-input::after {
+  .form-field-tick__input--checkbox:checked + .form-field-tick__decoration-input::after {
     background-image: url("../img/signs/tick.svg");
   }
 }
 
-.form-container--for-tick .form-container__item:active {
-  .form-cell__decoration-input {
+.form-container-tick__item:active {
+  .form-field-tick__decoration-input {
     background-color: #d5d5d5;
   }
 
-  .form-cell__input:checked + .form-cell__decoration-input::after {
+  .form-field-tick__input:checked + .form-field-tick__decoration-input::after {
     background-color: #3333334d;
   }
 
-  .form-cell__input--checkbox:checked + .form-cell__decoration-input::after {
+  .form-field-tick__input--checkbox:checked + .form-field-tick__decoration-input::after {
     background-image: url("../img/signs/tick.svg");
     opacity: 30%;
   }

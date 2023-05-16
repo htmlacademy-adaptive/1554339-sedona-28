@@ -3,6 +3,9 @@
 
   @media (min-width: @tablet-width) {
     padding: 0 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
@@ -27,5 +30,21 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 34px;
+  }
+}
+
+.posts__item {
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    width: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    // width: 33.3%;
+    width: 400px;
+  }
+
+  &--main {
+    width: 100%;
   }
 }

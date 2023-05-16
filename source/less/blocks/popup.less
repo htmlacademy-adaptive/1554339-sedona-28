@@ -53,25 +53,11 @@
 
   &--success {
     padding: 0;
-    padding-top: 35px;
-
-    @media (min-width: @tablet-width) {
-      width: 640px;
-      padding-top: 45px;
-    }
   }
 }
 
 .popup__content {
-  padding: 0 39px 28px 37px;
-}
-
-.popup--success .popup__content {
-  padding: 0 39px 30px 37px;
-
-  @media (min-width: @tablet-width) {
-    padding: 0 39px 39px 37px;
-  }
+  padding: 30px 39px 28px 37px;
 }
 
 .popup__description {
@@ -121,7 +107,8 @@
 .popup__title {
   max-width: 350px;
   line-height: 39px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (max-width: @mobile-width-only) {
     font-size: 18px;
