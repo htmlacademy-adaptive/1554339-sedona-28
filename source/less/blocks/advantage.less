@@ -16,17 +16,80 @@
 
   &--dark {
     background-color: #eeeeee;
-    padding: 0 18px;
+    padding: 25px 18px;
   }
 
   &--bridge {
     @media (max-width: @mobile-width-only) {
-      margin-top: 46px;
+      // margin-top: 46px;
+    }
+  }
+
+  &--wide {
+    @media (min-width: @tablet-width) {
+      width: 100%;
     }
   }
 }
 
+.advantage--light .advantage__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0 0 47px;
+
+  @media (min-width: @tablet-width) {
+    padding: 98px 0 0;
+  }
+}
+
+.advantage--light .advantage__title {
+  @media (max-width: @mobile-width-only) {
+    text-align: left;
+  }
+}
+
+.advantage--light .advantage__description {
+  @media (max-width: @mobile-width-only) {
+    text-align: left;
+    margin-top: 5px;
+  }
+}
+
+.advantage--house .advantage__wrapper {
+  background-image: url(../img/icon-house.svg);
+  background-repeat: no-repeat;
+  background-size: 39px 36px;
+
+  @media (min-width: @tablet-width) {
+    background-size: 77px 72px;
+    background-position: center 0;
+  }
+}
+
+.advantage--burger .advantage__wrapper {
+  background-image: url(../img/icon-burger.svg);
+  background-repeat: no-repeat;
+  background-size: 40px 35px;
+
+  @media (min-width: @tablet-width) {
+    background-size: 80px 68px;
+    background-position: center 0;
+  }
+}
+
+.advantage--gift .advantage__wrapper {
+  background-image: url(../img/icon-gift.svg);
+  background-repeat: no-repeat;
+  background-size: 32px 38px;
+
+  @media (min-width: @tablet-width) {
+    background-size: 67px 75px;
+    background-position: center 0;
+  }
+}
+
 .advantage__title {
+  margin-bottom: 11px;
   color: #000000;
 
   @media (min-width: @desktop-width) {
@@ -35,7 +98,6 @@
 }
 
 .advantage__description {
-  color: #333333;
 
   @media (min-width: @desktop-width) {
     max-width: 300px;
@@ -43,19 +105,16 @@
 }
 
 .advantage--wide {
+  display: flex;
+
   @media (max-width: @mobile-width-only) {
-    display: flex;
     flex-direction: column-reverse;
   }
+}
 
+.advantage--reverse {
   @media (min-width: @tablet-width) {
-    display: flex;
-  }
-
-  &:first-of-type {
-    @media (min-width: @tablet-width) {
-      flex-direction: row-reverse;
-    }
+    flex-direction: row-reverse;
   }
 }
 
@@ -68,10 +127,10 @@
 }
 
 .advantage__number {
-  margin: 11px 0 17px;
+  margin-bottom: 17px;
 
   @media (min-width: @tablet-width) {
-    margin: 14px 0 22px;
+    margin-bottom: 22px;
   }
 }
 
@@ -87,14 +146,10 @@
   padding: 55px 18px 40px;
 
   @media (min-width: @tablet-width) {
-    width: 256px;
-    min-height: 256px;
     padding: 45px 33px 28px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 400px;
-    min-height: 256px;
     padding: 25px 33px 28px;
   }
 }
@@ -136,65 +191,34 @@
   }
 }
 
-.advantage--light .advantage__wrapper {
-  display: flex;
+// .advantage--gift .advantage__title {
+//   @media (min-width: @tablet-width) {
+//     margin-top: 17px;
+//   }
 
-  @media (min-width: @tablet-width) {
-    flex-direction: column;
-  }
-}
+//   @media (min-width: @desktop-width) {
+//     margin-top: 28px;
+//   }
+// }
 
-.advantage--light .advantage__title {
-  text-align: left;
-  margin-top: 8px;
-  margin-bottom: 16px;
+// .advantage__svg {
+//   @media (min-width: @tablet-width) {
+//     margin: 0 auto;
+//   }
+// }
 
-  @media (min-width: @tablet-width) {
-    text-align: center;
-    margin-top: 26px;
-    margin-bottom: 24px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 33px auto 24px;
-  }
-}
-
-.advantage--present .advantage__title {
-  @media (min-width: @tablet-width) {
-    margin-top: 17px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: 28px;
-  }
-}
-
-.advantage__svg {
-  @media (min-width: @tablet-width) {
-    margin: 0 auto;
-  }
-}
-
-.advantage--light .advantage__content-wrapper {
-  margin-left: 8px;
-}
+// .advantage--light .advantage__content-wrapper {
+//   margin-left: 8px;
+// }
 
 
-.advantage--light .advantage__description {
-  @media (max-width: @mobile-width-only) {
-    text-align: left;
-  }
-}
+// .advantage--light svg {
+//   display: block;
 
-.advantage--light svg {
-  display: block;
-
-  @media (max-width: @mobile-width-only) {
-    width: 40px;
-    height: 40px;
-  }
-}
+//   @media (max-width: @mobile-width-only) {
+//     width: 40px;
+//   }
+// }
 
 .advantage--dark .advantage__wrapper {
   margin: 0 auto;
@@ -202,17 +226,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 25px 0;
-  border-bottom: solid 1px #d6d6d6;
-
-  @media (min-width: @tablet-width) {
-    border: none;
-    padding: 41px 15px 17px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding: 52px 50px;
-  }
 }
 
 .advantage--dark:last-child .advantage__wrapper {
@@ -224,3 +237,14 @@
     max-width: 150px;
   }
 }
+
+//нижнее подчеркивание у dark
+// &::before {
+//   content: "";
+//   position: absolute;
+//   left: 18px;
+//   right: 18px;
+//   height: 1px;
+//   background-color: #d6d6d6;
+//   // bottom: 50%;
+// }

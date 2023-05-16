@@ -1,24 +1,26 @@
 .advantages__list {
-  list-style-type: none;
-  padding-top: 20px;
+  .clear-list();
+  position: relative;
 
   @media (min-width: @tablet-width) {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
   }
-}
 
-.advantages__item.advantage--light,
-.advantages__item.advantage--dark {
-  @media (min-width: @tablet-width) {
-    width: 256px;
-    min-height: 256px;
-  }
+  &::before {
+    content: "";
+    background-image: url("../img/signs/decoration-for-advantages.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: center;
+    top: 0;
+    height: 37px;
+    width: 100%;
 
-  @media (min-width: @desktop-width) {
-    width: 400px;
-    min-height: 256px;
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -33,58 +35,29 @@
   @media (min-width: @desktop-width) {
     padding: 48px 124px 46px;
   }
-
-  &::before {
-    content: "";
-    background-image: url("../../img/signs/blue-right-decoration.svg");
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    right: 0%;
-    top: 205px;
-    background-repeat: no-repeat;
-
-    @media (min-width: @tablet-width) {
-      background-image: none;
-    }
-  }
-
-  &::after {
-    content: "";
-    background-image: url("../../img/signs/blue-left-decoration.svg");
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 205px;
-    right: calc(-50% + 1px);
-    background-repeat: no-repeat;
-
-    @media (min-width: @tablet-width) {
-      background-image: none;
-    }
-  }
 }
 
 .advantages__title {
-  @media (min-width: @desktop-width) {
-    width: 484px;
-    margin: 10px auto 0;
-  }
-}
-
-.advantages__description {
-  margin-top: 35px;
+  margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
+
 
 .advantages__title br {
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
+
+.advantages__item {
+  @media (min-width: @tablet-width) {
+    width: 33.3%;
+  }
+}
+
 
 // .advantages__item {
 //   width: 100%;

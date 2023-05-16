@@ -46,13 +46,7 @@
 }
 
 .main-nav__item {
-  padding: 17px 0 12px 0;
-
-  @media (max-width: @mobile-width-only) {
-    border-top: 1px solid #01010133;
-    border-bottom: 1px solid #ffffff33;
-  }
-
+  // padding: 17px 0 12px 0;
   @media (min-width: @tablet-width) {
     width: 153px;
   }
@@ -77,7 +71,14 @@
 }
 
 .main-nav__link {
+  display: block;
+  padding: 17px 0 12px 0;
   color: #ffffff;
+
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid #01010133;
+    border-bottom: 1px solid #ffffff33;
+  }
 
   @media (min-width: @tablet-width) {
     color: #000000;
@@ -89,18 +90,21 @@
     }
   }
 
-  &:hover {
+  &:hover:not(.main-nav__link--active) {
+    @media (max-width: @mobile-width-only) {
+      background-color: #669ec0;
+    }
+
     @media (min-width: @tablet-width) {
       color: #81b3d2;
     }
   }
 
-  // &:focus {
-
-  // }
-
-  &:active {
-    color: #ffffff4d;
+  &:active:not(.main-nav__link--active) {
+    @media (max-width: @mobile-width-only) {
+      background-color: #5496bd;
+      color: #ffffff4d;
+    }
 
     @media (min-width: @tablet-width) {
       color: #000000;
@@ -127,7 +131,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  background-image: url("../../img/signs/icon-cross.svg");
+  background-image: url("../img/signs/icon-cross.svg");
   background-repeat: no-repeat;
   background-position: center;
 
@@ -149,14 +153,16 @@
   height: 4px;
   width: 23px;
   box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
+}
 
-  &:hover {
-    // box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
-  }
+.main-nav--closed .main-nav__toggle:hover::after {
+  background-color: #81b3d299;
+  box-shadow: 0 9px 0 0 #81b3d299, 0 18px 0 0 #81b3d299;
+}
 
-  &:active {
-    // box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
-  }
+.main-nav--closed .main-nav__toggle:active::after {
+  background-color: #80b2d14d;
+  box-shadow: 0 9px 0 0 #80b2d14d, 0 18px 0 0 #80b2d14d;
 }
 
 .main-nav--nojs {
