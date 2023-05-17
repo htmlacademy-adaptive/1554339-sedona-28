@@ -57,11 +57,15 @@
   &--main {
     border-top: none;
   }
-
-  &--html-academy {
-    border-bottom: none;
-  }
 }
+
+.main-nav__wrapper:last-child {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background-size: 100% 7px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
 
 .main-nav--closed .main-nav__item {
   @media (max-width: @mobile-width-only) {
