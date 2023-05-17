@@ -60,10 +60,12 @@
 }
 
 .main-nav__wrapper:last-child {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-  background-size: 100% 7px;
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
+  @media (max-width: @mobile-width-only) {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background-size: 100% 7px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
 }
 
 
