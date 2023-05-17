@@ -1,17 +1,15 @@
 .video-player__video {
-  padding: 0 20px;
-
   @media (min-width: @tablet-width) {
-    padding: 0 60px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 199px;
+    margin-bottom: 90px;
   }
 }
 
 .video-player__wrapper {
-  padding: 15px 20px 38px;
+  padding: 18px 20px 38px;
 
   @media (min-width: @tablet-width) {
     padding: 55px 160px 90px;
@@ -24,10 +22,15 @@
 
 .video-player__title {
   margin-bottom: 29px;
+
+  @media (max-width: @mobile-width-only) {
+    font-size: 18px;
+  }
 }
 
 .video-player__description {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (max-width: @mobile-width-only) {
     max-width: 255px;

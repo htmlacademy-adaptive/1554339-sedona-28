@@ -1,0 +1,104 @@
+.form-container-tick__item {
+  // min-height: 20px;
+  margin: 4px 0;
+
+  @media (min-width: @tablet-width) {
+    width: 224px;
+    margin: 8px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    // margin: 8px 0;
+  }
+
+  &--radio {
+    // margin: 4px 0;
+    @media (min-width: @tablet-width) {
+      width: 280px;
+      margin: 8px 0;
+    }
+  }
+}
+
+.form-container-tick__title {
+  margin-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.form-container-tick {
+  padding: 23px 20px 13px;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+    padding: 23px 0 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 33px;
+  }
+}
+
+.form-container-tick__item:hover {
+  .form-field-tick__decoration-input {
+    background-color: #e5e5e5;
+  }
+
+  .form-field-tick__input:checked + .form-field-tick__decoration-input::after {
+    background-color: #333333;
+  }
+
+  .form-field-tick__input--checkbox:checked + .form-field-tick__decoration-input::after {
+    background-image: url("../img/signs/tick.svg");
+  }
+}
+
+.form-container-tick__item:active {
+  .form-field-tick__decoration-input {
+    background-color: #d5d5d5;
+  }
+
+  .form-field-tick__input:checked + .form-field-tick__decoration-input::after {
+    background-color: #3333334d;
+  }
+
+  .form-field-tick__input--checkbox:checked + .form-field-tick__decoration-input::after {
+    background-image: url("../img/signs/tick.svg");
+    opacity: 30%;
+  }
+}
+
+.form-container-tick__wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 0 55px 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 5px 10px 15px 50px;
+  }
+}
+
+.form-container-tick--checkbox .form-container-tick__wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 0 100px 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 21px 30px 37px 40px;
+  }
+}
