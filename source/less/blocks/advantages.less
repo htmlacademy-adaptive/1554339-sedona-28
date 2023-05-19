@@ -64,17 +64,17 @@
       max-width: 500px;
     }
   }
+
+  .advantages__br-mobile {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .advantages__container .advantages__item:not(:last-child) {
   @media (max-width: @mobile-width-only) {
     margin-bottom: 23px;
-  }
-}
-
-.advantages__title br {
-  @media (min-width: @tablet-width) {
-    display: none;
   }
 }
 

@@ -113,4 +113,16 @@
       padding-bottom: 22px;
     }
   }
+
+  .feedback__br-mobile {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  .feedback__br-tablet {
+    @media (max-width: @mobile-width-only) {
+      display: none;
+    }
+  }
 }

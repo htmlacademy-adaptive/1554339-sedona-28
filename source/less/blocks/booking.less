@@ -51,10 +51,17 @@
       transform: translate(-50%, -50%);
     }
   }
-}
 
-.booking__description br {
-  @media (max-width: @mobile-width-only) {
-    display: none;
+  .booking__br-mobile {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  .booking__br-tablet {
+    @media (max-width: @mobile-width-only) {
+      display: none;
+    }
   }
 }
+

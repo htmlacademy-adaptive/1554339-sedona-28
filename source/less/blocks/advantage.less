@@ -266,19 +266,31 @@
       }
     }
   }
-}
 
-.advantage--light br,
-.advantage--dark br,
-.advantage--wide br {
-  @media (max-width: @mobile-width-only) {
-    display: none;
+  .advantage__br-mobile {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
-}
 
-.advantage--dark br {
-  @media (min-width: @desktop-width) {
-    display: none;
+  .advantage__br-tablet {
+    @media (max-width: @mobile-width-only) {
+      display: none;
+    }
+  }
+
+  .advantage__br-tablet-only {
+    @media (max-width: @mobile-width-only) {
+      display: none;
+    }
+
+    @media (min-width: @tablet-width) {
+      display: inline;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
   }
 }
 

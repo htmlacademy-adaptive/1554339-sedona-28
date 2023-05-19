@@ -50,16 +50,39 @@
 
     &--checkbox {
       &:checked + .form-field-tick__decoration-input::after {
-        content: "";
-        position: absolute;
         background-color: inherit;
         background-image: url("../img/signs/tick.svg");
         width: 22px;
-        height: 16px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
       }
+    }
+  }
+
+  &:hover {
+    .form-field-tick__decoration-input {
+      background: #e5e5e5;
+    }
+
+    .form-field-tick__input:checked + .form-field-tick__decoration-input::after {
+      background: #333333;
+    }
+
+    .form-field-tick__input--checkbox:checked + .form-field-tick__decoration-input::after {
+      background: url("../img/signs/tick.svg");
+    }
+  }
+
+  &:active {
+    .form-field-tick__decoration-input {
+      background: #d5d5d5;
+    }
+
+    .form-field-tick__input:checked + .form-field-tick__decoration-input::after {
+      background: #3333334d;
+    }
+
+    .form-field-tick__input--checkbox:checked + .form-field-tick__decoration-input::after {
+      background: url("../img/signs/tick.svg");
+      opacity: 30%;
     }
   }
 }
