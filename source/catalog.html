@@ -6,13 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <div class="page__wrapper">
     <header class="main-header">
       <a class="logo" href="index.html">
-        <img class="logo__image" src="img/logo.svg" width="185" height="96" alt="Седона">
+        <picture>
+          <img class="logo__image" src="img/logo.svg" width="185" height="96" alt="Седона">
+        </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -50,7 +56,9 @@
     <main class="main-container">
       <h1 class="visually-hidden">Седона</h1>
       <div class="intro intro--form">
-        <img class="intro__image intro__image--form" src="img/sedona.svg" height="39" width="229" alt="Надпись Седона.">
+        <picture>
+          <img class="intro__image intro__image--form" src="img/sedona.svg" height="39" width="229" alt="Надпись Седона.">
+        </picture>
       </div>
       <section class="posts">
         <div class="posts__wrapper">
@@ -64,7 +72,12 @@
         <ul class="posts__list">
           <li class="posts__item post">
             <div class="post__img">
-              <img src="img/posts/vast.jpg" height="280" width="280" alt="Пост. Неродные просторы.">
+              <!-- <img src="img/posts/vast.jpg" height="280" width="280" alt="Пост. Неродные просторы."> -->
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/posts/vast-post-desktop@1x.jpg 1x, img/posts/vast-post-desktop@2x.jpg 2x" width="1200" height="400">
+                <source media="(min-width: 768px)" srcset="img/posts/vast-post-tablet@1x.jpg 1x, img/posts/vast-post-tablet@2x.jpg 2x" width="648" height="400">
+                <img src="img/posts/vast-post@1x.jpg" srcset="img/posts/vast-post@2x.jpg 2x" width="280" height="280" alt="Пост. Неродные просторы.">
+              </picture>
             </div>
             <div class="post__wrapper">
               <div class="post__content">
@@ -83,7 +96,12 @@
           </li>
           <li class="posts__item post">
             <div class="post__img">
-              <img src="img/posts/flora.jpg" height="280" width="280" alt="Пост. Местная растительность.">
+              <!-- <img src="img/posts/flora.jpg" height="280" width="280" alt="Пост. Местная растительность."> -->
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/posts/flora-post-desktop@1x.jpg 1x, img/posts/flora-post-desktop@2x.jpg 2x" width="400" height="267">
+                <source media="(min-width: 768px)" srcset="img/posts/flora-post-tablet@1x.jpg 1x, img/posts/flora-post-tablet@2x.jpg 2x" width="324" height="267">
+                <img src="img/posts/flora-post@1x.jpg" srcset="img/posts/flora-post@2x.jpg 2x" width="280" height="280" alt="Пост. Местная растительность.">
+              </picture>
             </div>
             <div class="post__wrapper">
               <div class="post__content">
@@ -102,7 +120,12 @@
           </li>
           <li class="posts__item post">
             <div class="post__img">
-              <img src="img/posts/road.jpg" height="280" width="280" alt="Пост. Дорога на север.">
+              <!-- <img src="img/posts/road.jpg" height="280" width="280" alt="Пост. Дорога на север."> -->
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/posts/road-post-desktop@1x.jpg 1x, img/posts/road-post-desktop@2x.jpg 2x" width="400" height="267">
+                <source media="(min-width: 768px)" srcset="img/posts/road-post-tablet@1x.jpg 1x, img/posts/road-post-tablet@2x.jpg 2x" width="324" height="267">
+                <img src="img/posts/road-post@1x.jpg" srcset="img/posts/road-post@2x.jpg 2x" width="280" height="280" alt="Пост. Дорога на север.">
+              </picture>
             </div>
             <div class="post__wrapper post__wrapper--dark">
               <div class="post__content">
@@ -121,7 +144,12 @@
           </li>
           <li class="posts__item post">
             <div class="post__img">
-              <img src="img/posts/bridge.jpg" height="280" width="280" alt="Пост. Мост дьявола.">
+              <!-- <img src="img/posts/bridge.jpg" height="280" width="280" alt="Пост. Мост дьявола."> -->
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/posts/bridge-post-desktop@1x.jpg 1x, img/posts/bridge-post-desktop@2x.jpg 2x" width="400" height="267">
+                <source media="(min-width: 768px)" srcset="img/posts/bridge-post-tablet@1x.jpg 1x, img/posts/bridge-post-tablet@2x.jpg 2x" width="324" height="267">
+                <img src="img/posts/flora-post@1x.jpg" srcset="img/posts/bridge-post@2x.jpg 2x" width="280" height="280" alt="Пост. Мост дьявола.">
+              </picture>
             </div>
             <div class="post__wrapper">
               <div class="post__content">
@@ -151,7 +179,12 @@
           </p>
         </div>
         <div class="video-player__video video">
-          <img class="video__img" src="img/extra/video.jpg" height="177" width="280" alt="Видеопрезентация Седона.">
+          <!-- <img class="video__img" src="img/extra/video.jpg" height="177" width="280" alt="Видеопрезентация Седона."> -->
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/extra/video-desktop@1x.jpg 1x, img/extra/video-desktop@2x.jpg 2x" width="800" height="500">
+            <source media="(min-width: 768px)" srcset="img/extra/video-tablet@1x.jpg 1x, img/extra/video-tablet@2x.jpg 2x" width="648" height="500">
+            <img class="video__img" src="img/extra/video@1x.jpg" srcset="img/extra/video@2x.jpg 2x" width="280" height="177" alt="Видеопрезентация Седона.">
+          </picture>
           <button class="video__button" type="button"></button>
         </div>
       </section>

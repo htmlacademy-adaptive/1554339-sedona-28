@@ -6,13 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <div class="page__wrapper">
     <header class="main-header">
       <a class="logo" href="index.html">
-        <img class="logo__image" src="img/logo.svg" width="185" height="96" alt="Седона">
+        <picture>
+          <img class="logo__image" src="img/logo.svg" width="185" height="96" alt="Седона">
+        </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -50,7 +56,9 @@
     <main class="main-container">
       <h1 class="visually-hidden">Седона</h1>
       <div class="intro intro--form">
-        <img class="intro__image intro__image--form" src="img/sedona.svg" height="39" width="229" alt="Надпись Седона.">
+        <picture>
+          <img class="intro__image intro__image--form" src="img/sedona.svg" height="39" width="229" alt="Надпись Седона.">
+        </picture>
       </div>
       <section class="feedback">
         <div class="feedback__wrapper">

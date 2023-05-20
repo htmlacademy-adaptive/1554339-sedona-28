@@ -4,23 +4,6 @@
   align-items: center;
   cursor: pointer;
 
-
-  &:hover {
-    color: #81b3d2;
-  }
-
-  &:hover svg {
-    fill: #81b3d2;
-  }
-
-  &:active {
-    color: #b3b3b3;
-  }
-
-  &:active svg {
-    fill: #b3b3b3;
-  }
-
   svg {
     fill: #000000;
     display: block;
@@ -29,5 +12,25 @@
   .copyright__text {
     color: #000000;
     margin-right: 12px;
+  }
+
+  &:hover {
+    svg {
+      fill: #81b3d2;
+    }
+
+    .copyright__text {
+      color: #81b3d2;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: #b3b3b3;
+    }
+
+    .copyright__text {
+      color: #b3b3b3;
+    }
   }
 }

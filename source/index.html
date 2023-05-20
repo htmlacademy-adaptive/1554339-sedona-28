@@ -6,13 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <div class="page__wrapper">
     <header class="main-header">
       <a class="logo" href="#">
-        <img class="logo__image" src="img/logo.svg" width="185" height="96" alt="Седона">
+        <picture>
+          <img src="img/logo.svg" width="185" height="96" alt="Седона.">
+        </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -50,7 +56,9 @@
     <main class="main-container">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
       <div class="intro">
-        <img class="intro__image" src="img/intro-img.svg" height="214" width="282" alt="Добро пожаловать в Седону.">
+        <picture>
+          <img class="intro__image" src="img/intro-img.svg" height="214" width="282" alt="Добро пожаловать в Седону.">
+        </picture>
       </div>
       <section class="advantages">
         <div class="advantages__wrapper">
@@ -64,7 +72,12 @@
         <ul class="advantages__list">
           <li class="advantages__item advantage advantage--wide advantage--reverse">
             <div class="advantage__img-container">
-              <img class="advantage__img" src="img/house.jpg" height="260" width="320" alt="Дом в Седоне.">
+              <!-- <img class="advantage__img" src="img/house.jpg" height="260" width="320" alt="Дом в Седоне."> -->
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/house-desktop@1x.jpg 1x, img/house-desktop@2x.jpg 2x" width="800" height="256">
+                <source media="(min-width: 768px)" srcset="img/house-tablet@1x.jpg 1x, img/house-tablet@2x.jpg 2x" width="512" height="256">
+                <img class="advantage__img" src="img/house@1x.jpg" srcset="img/house@2x.jpg 2x" width="320" height="260" alt="Дом в Седоне.">
+              </picture>
             </div>
             <div class="advantage__wrapper">
               <h3 class="advantage__title title">Настоящий<br class="advantage__br-tablet"> городок</h3>
@@ -93,7 +106,12 @@
           </li>
           <li class="advantages__item advantage advantage--wide advantage--bridge">
             <div class="advantage__img-container">
-              <img class="advantage__img" src="img/bridge.jpg" height="260" width="320" alt="Мост Дьявола в Седоне.">
+              <!-- <img class="advantage__img" src="img/bridge.jpg" height="260" width="320" alt="Мост Дьявола в Седоне."> -->
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/bridge-desktop@1x.jpg 1x, img/bridge-desktop@2x.jpg 2x" width="800" height="256">
+                <source media="(min-width: 768px)" srcset="img/bridge-tablet@1x.jpg 1x, img/bridge-tablet@2x.jpg 2x" width="512" height="256">
+                <img class="advantage__img" src="img/bridge@1x.jpg" srcset="img/bridge@2x.jpg 2x" width="320" height="260" alt="Мост Дьявола в Седоне.">
+              </picture>
             </div>
             <div class="advantage__wrapper">
               <h3 class="advantage__title title">Там есть<br class="advantage__br-tablet"> Мост дьявола</h3>
@@ -136,7 +154,12 @@
           <a class="booking__button button" href="#">Найти гостиницу</a>
         </div>
         <div class="booking__map">
-          <img class="booking__img" src="img/extra/map.jpg" height="350" width="320" alt="Карта.">
+          <!-- <img class="booking__img" src="img/extra/map.jpg" height="350" width="320" alt="Карта."> -->
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/extra/map-desktop@1x.jpg 1x, img/extra/map-desktop@2x.jpg 2x" width="1200" height="350">
+            <source media="(min-width: 768px)" srcset="img/extra/map-tablet@1x.jpg 1x, img/extra/map-tablet@2x.jpg 2x" width="768" height="350">
+            <img class="booking__img" src="img/extra/map@1x.jpg" srcset="img/extra/map@2x.jpg 2x" width="320" height="350" alt="Карта.">
+          </picture>
         </div>
       </section>
     </main>
