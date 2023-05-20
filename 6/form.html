@@ -59,7 +59,7 @@
             Оставьте свой отзыв
           </h2>
           <p class="feedback__description description">
-            Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+            Помогите нашим отелям стать лучше!<br class="feedback__br-mobile"> оставьте отзыв о них,<br class="feedback__br-tablet"> а также о<br class="feedback__br-mobile"> посещенных вами<br class="feedback__br-mobile"> достопримечательностях
           </p>
         </div>
         <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="get">
@@ -116,28 +116,28 @@
             </div>
           </fieldset>
           <fieldset class="feedback__fieldset form-container-tick form-container-tick--checkbox">
-            <h2 class="form-container-tick__title title">Посещенные<br> достропримечательности:</h2>
+            <h2 class="form-container-tick__title title">Посещенные<br> достопримечательности:</h2>
             <div class="form-container-tick__wrapper form-container-tick__wrapper--place">
               <div class="form-container-tick__item form-field-tick">
-                <input class="visually-hidden form-field-tick__input--checkbox" type="checkbox" name="devilsbridge" value="devilsbridge"
+                <input class="visually-hidden form-field-tick__input form-field-tick__input--checkbox" type="checkbox" name="devilsbridge" value="devilsbridge"
                   id="devilsbridge" checked>
                   <span class="form-field-tick__decoration-input form-field-tick__decoration-input--checkbox"></span>
                 <label class="form-field-tick__input-area" for="devilsbridge">Мост Дьявола</label>
               </div>
               <div class="form-container-tick__item form-field-tick">
-                <input class="visually-hidden form-field-tick__input--checkbox" type="checkbox" name="mountbell" value="mountbell" id="mountbell"
+                <input class="visually-hidden form-field-tick__input form-field-tick__input--checkbox" type="checkbox" name="mountbell" value="mountbell" id="mountbell"
                   checked>
                   <span class="form-field-tick__decoration-input form-field-tick__decoration-input--checkbox"></span>
                 <label class="form-field-tick__input-area" for="mountbell">Гора-Колокол</label>
               </div>
               <div class="form-container-tick__item form-field-tick">
-                <input class="visually-hidden form-field-tick__input--checkbox" type="checkbox" name="slidepark" value="slidepark" id="slidepark"
+                <input class="visually-hidden form-field-tick__input form-field-tick__input--checkbox" type="checkbox" name="slidepark" value="slidepark" id="slidepark"
                   checked>
                   <span class="form-field-tick__decoration-input form-field-tick__decoration-input--checkbox"></span>
                 <label class="form-field-tick__input-area" for="slidepark">Слайд-парк</label>
               </div>
               <div class="form-container-tick__item form-field-tick">
-                <input class="visually-hidden form-field-tick__input--checkbox" type="checkbox" name="redrocks" value="redrocks" id="redrocks">
+                <input class="visually-hidden form-field-tick__input form-field-tick__input--checkbox" type="checkbox" name="redrocks" value="redrocks" id="redrocks">
                 <span class="form-field-tick__decoration-input form-field-tick__decoration-input--checkbox"></span>
                 <label class="form-field-tick__input-area" for="redrocks">Красные скалы</label>
               </div>
@@ -157,7 +157,7 @@
 
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <span class="main-footer__hashtag" href="#">
+        <span class="main-footer__hashtag">
           <span class="visually-hidden">Хештег</span>
             #visitsedona</span>
         <div class="main-footer__social social">
@@ -194,7 +194,7 @@
         </div>
         <a class="main-footer__copyright copyright" href="#">
           <span class="copyright__text">Разработано</span>
-          <div class="copyright__link" href="#">
+          <div class="copyright__link">
             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35">
               <path
                 d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z" />
@@ -204,8 +204,8 @@
       </div>
     </footer>
 
-    <section class="popup-screen popup-screen--closed">
-      <div class="popup-screen__window popup popup--closed">
+    <section class="popup popup--closed">
+      <div class="popup__window popup__window--closed">
         <h2 class="popup__title title title--big-font-size">
           Что-то пошло не так!
         </h2>
@@ -215,7 +215,7 @@
         <button class="popup__button popup__button--error-size button" type="submit">Ок</button>
       </div>
 
-      <div class="popup-screen__window popup popup--success popup--closed">
+      <div class="popup__window popup__window--opened popup__window--success">
         <div class="popup__content">
         <h2 class="popup__title title title--big-font-size">
           Ваш отзыв отправлен!
@@ -228,8 +228,8 @@
           <button class="popup__button popup__button--background popup__button--luck-size button" type="submit">Закрыть окно</button>
         </div>
       </div>
-
     </section>
+
   </div>
   <script src="js/script.js"></script>
 </body>
