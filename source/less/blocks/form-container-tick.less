@@ -1,0 +1,106 @@
+.form-container-tick {
+  padding: 23px 20px 13px;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+    padding: 23px 0 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 33px;
+  }
+
+  .form-container-tick__item {
+    margin: 16px 0;
+
+    @media (min-width: @tablet-width) {
+      width: 224px;
+      margin: 8px 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: auto;
+    }
+
+    &--radio {
+      @media (min-width: @tablet-width) {
+        width: 280px;
+        margin: 8px 0;
+      }
+    }
+  }
+
+  .form-container-tick__title {
+    margin-bottom: 18px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 30px;
+    }
+
+    position: relative;
+    z-index: 2;
+
+    &::before {
+      @media (min-width: @tablet-width) {
+        content: "";
+        position: absolute;
+        height: 100%;
+        background-color: #ffffff;
+        width: 402px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 0;
+        z-index: -1;
+      }
+    }
+
+    &::after {
+      @media (min-width: @tablet-width) {
+        content: "";
+        position: absolute;
+        height: 1px;
+        background-color: #dbdbdb;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 50%;
+        z-index: -2;
+      }
+    }
+  }
+
+  .form-container-tick__wrapper {
+    @media (min-width: @tablet-width) {
+      padding: 0 55px 0 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 5px 10px 15px 50px;
+    }
+  }
+
+  &--checkbox {
+    .form-container-tick__wrapper {
+      @media (min-width: @tablet-width) {
+        padding: 0 100px 0 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      @media (min-width: @desktop-width) {
+        padding: 21px 30px 37px 40px;
+      }
+    }
+  }
+}
