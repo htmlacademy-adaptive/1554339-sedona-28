@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 5;
   background-color: #0000004d;
   height: 100%;
   display: flex;
@@ -32,67 +32,6 @@
 
   &--closed {
     display: none;
-  }
-
-  .popup__button {
-    font-size: 18px;
-    padding-top: 18px;
-    padding-bottom: 14px;
-    margin: 0 auto;
-    display: block;
-
-    &--luck-size {
-      width: 280px;
-
-      @media (min-width: @tablet-width) {
-        width: 458px;
-      }
-    }
-
-    &--error-size {
-      width: 180px;
-
-      @media (min-width: @tablet-width) {
-        width: 272px;
-      }
-    }
-  }
-
-  .popup__content {
-    padding: 30px 39px 28px 37px;
-  }
-
-  .popup__description {
-    margin: 17px 0 26px;
-
-    @media (min-width: @tablet-width) {
-      margin: 26px 0 45px;
-    }
-  }
-
-  .popup__button-wrapper {
-    background-color: #f2f2f2;
-    width: 100%;
-    padding: 20px;
-
-    @media (min-width: @tablet-width) {
-      padding: 43px;
-    }
-  }
-
-  .popup__title {
-    max-width: 350px;
-    line-height: 39px;
-    margin-left: auto;
-    margin-right: auto;
-
-    @media (max-width: @mobile-width-only) {
-      font-size: 18px;
-    }
-
-    @media (min-width: @tablet-width) {
-      max-width: 220px;
-    }
   }
 
   &--success {
@@ -124,5 +63,66 @@
       display: block;
       margin: 20px auto;
     }
+  }
+}
+
+.popup__button {
+  font-size: 18px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  margin: 0 auto;
+  display: block;
+
+  &--luck-size {
+    width: 280px;
+
+    @media (min-width: @tablet-width) {
+      width: 458px;
+    }
+  }
+
+  &--error-size {
+    width: 180px;
+
+    @media (min-width: @tablet-width) {
+      width: 272px;
+    }
+  }
+}
+
+.popup__content {
+  padding: 30px 39px 28px 37px;
+}
+
+.popup__description {
+  margin: 17px 0 26px;
+
+  @media (min-width: @tablet-width) {
+    margin: 26px 0 45px;
+  }
+}
+
+.popup__button-wrapper {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 43px;
+  }
+}
+
+.popup__title {
+  max-width: 350px;
+  line-height: 39px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: @mobile-width-only) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 220px;
   }
 }

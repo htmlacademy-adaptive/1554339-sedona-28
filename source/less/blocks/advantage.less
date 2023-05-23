@@ -1,43 +1,6 @@
 .advantage {
   background-color: #81b3d2;
 
-  .advantage__title {
-    margin-bottom: 11px;
-    color: #000000;
-    text-align: center;
-  }
-
-  .advantage__description {
-    @media (min-width: @desktop-width) {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 300px;
-    }
-  }
-
-  .advantage__number {
-    display: block;
-  }
-
-  .advantage__img {
-    display: block;
-
-    @media (min-width: @tablet-width) {
-      width: 100%;
-    }
-  }
-
-  .advantage__img-container {
-    @media (min-width: @tablet-width) {
-      width: 512px;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 800px;
-    }
-  }
-
   &--light {
     background-color: #ffffff;
     padding: 0 18px;
@@ -266,31 +229,68 @@
       }
     }
   }
+}
 
-  .advantage__br-mobile {
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
+.advantage__br-mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.advantage__br-tablet {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.advantage__br-tablet-only {
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
 
-  .advantage__br-tablet {
-    @media (max-width: @mobile-width-only) {
-      display: none;
-    }
+  @media (min-width: @tablet-width) {
+    display: inline;
   }
 
-  .advantage__br-tablet-only {
-    @media (max-width: @mobile-width-only) {
-      display: none;
-    }
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
 
-    @media (min-width: @tablet-width) {
-      display: inline;
-    }
+.advantage__title {
+  margin-bottom: 11px;
+  color: #000000;
+  text-align: center;
+}
 
-    @media (min-width: @desktop-width) {
-      display: none;
-    }
+.advantage__description {
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+  }
+}
+
+.advantage__number {
+  display: block;
+}
+
+.advantage__img {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.advantage__img-container {
+  @media (min-width: @tablet-width) {
+    width: 512px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
   }
 }
 
