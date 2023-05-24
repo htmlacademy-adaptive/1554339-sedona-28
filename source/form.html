@@ -14,10 +14,10 @@
 
 <body class="page__body">
   <div class="page__wrapper">
-    <header class="main-header">
-      <a class="logo" href="index.html">
+    <header class="main-header main-header--nojs">
+      <a class="main-header__logo logo" href="index.html">
         <picture>
-          <img class="logo__image" src="img/logo.svg" width="185" height="96" alt="Седона">
+          <img src="img/logo.svg" width="185" height="96" alt="Седона.">
         </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -207,7 +207,7 @@
     </footer>
 
     <section class="popup popup--closed">
-      <div class="popup__window popup__window--closed">
+      <div class="popup__window popup__window--opened">
         <h2 class="popup__title title title--big-font-size">
           Что-то пошло не так!
         </h2>
@@ -217,7 +217,7 @@
         <button class="popup__button popup__button--error-size button" type="submit">Ок</button>
       </div>
 
-      <div class="popup__window popup__window--opened popup__window--success">
+      <div class="popup__window popup__window--closed popup__window--success">
         <div class="popup__content">
         <h2 class="popup__title title title--big-font-size">
           Ваш отзыв отправлен!
