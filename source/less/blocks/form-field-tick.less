@@ -16,6 +16,12 @@
     }
   }
 
+  &:focus {
+    .form-field-tick__decoration-input {
+      border: 1px solid #333333;
+    }
+  }
+
   &:active {
     .form-field-tick__decoration-input {
       background: #d5d5d5;
@@ -65,6 +71,8 @@
 }
 
 .form-field-tick__input {
+  display: none;
+
   &:checked + .form-field-tick__decoration-input::after {
     content: "";
     position: absolute;
