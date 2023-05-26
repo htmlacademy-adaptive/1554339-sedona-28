@@ -1,0 +1,135 @@
+.form-container {
+  padding: 23px 20px 25px;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 25px 0 23px;
+  }
+
+  &--rewiew {
+    border-bottom: none;
+    padding-top: 16px;
+  }
+
+  &:last-of-type {
+    @media (min-width: @desktop-width) {
+      padding-top: 25px;
+    }
+  }
+
+  &--rewiew .form-container__title {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+.form-container__item {
+  min-height: 84px;
+  margin-bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 14px;
+  }
+}
+
+.form-container__text-area {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  background-color: #f2f2f2;
+  min-height: 150px;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  position: relative;
+  z-index: 3;
+  padding: 18px;
+  outline: none;
+  resize: none;
+
+  @media (min-width: @tablet-width) {
+    min-height: 160px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 768px;
+    margin: 27px auto 0;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus:not(:invalid) {
+    padding: 14px;
+    background-color: #ffffff;
+    border: solid 4px #e5e5e5;
+  }
+}
+
+.form-container__title {
+  margin-bottom: 20px;
+
+  &:not(.form-container__title--simple) {
+    position: relative;
+    z-index: 2;
+
+    &::before {
+      @media (min-width: @tablet-width) {
+        content: "";
+        position: absolute;
+        height: 100%;
+        background-color: #ffffff;
+        width: 402px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 0;
+        z-index: -1;
+      }
+    }
+
+    &::after {
+      @media (min-width: @tablet-width) {
+        content: "";
+        position: absolute;
+        height: 1px;
+        background-color: #dbdbdb;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 50%;
+        z-index: -2;
+      }
+    }
+  }
+
+  &--simple {
+    margin-bottom: 12px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 23px;
+    }
+  }
+
+  &--name {
+    margin-bottom: 18px;
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 21px;
+    }
+  }
+}

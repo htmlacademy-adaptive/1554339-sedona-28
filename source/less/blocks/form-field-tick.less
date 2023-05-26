@@ -1,0 +1,96 @@
+.form-field-tick {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    .form-field-tick__decoration-input {
+      background: #e5e5e5;
+    }
+
+    .form-field-tick__input:checked + .form-field-tick__decoration-input::after {
+      background: #333333;
+    }
+
+    .form-field-tick__input--checkbox:checked + .form-field-tick__decoration-input::after {
+      background: url("../img/signs/tick.svg");
+    }
+  }
+
+  &:focus {
+    .form-field-tick__decoration-input {
+      border: 1px solid #333333;
+    }
+  }
+
+  &:active {
+    .form-field-tick__decoration-input {
+      background: #d5d5d5;
+    }
+
+    .form-field-tick__input:checked + .form-field-tick__decoration-input::after {
+      background: #3333334d;
+    }
+
+    .form-field-tick__input--checkbox:checked + .form-field-tick__decoration-input::after {
+      background: url("../img/signs/tick.svg");
+      opacity: 30%;
+    }
+  }
+}
+
+.form-field-tick__input-area {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+  padding: 10px 14px 10px 62px;
+  outline: none;
+  text-transform: none;
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.form-field-tick__decoration-input {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  z-index: 1;
+
+  &--checkbox {
+    border-radius: 4px;
+  }
+}
+
+.form-field-tick__input {
+  display: none;
+
+  &:checked + .form-field-tick__decoration-input::after {
+    content: "";
+    position: absolute;
+    background-color: #333333;
+    z-index: 2;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--checkbox {
+    &:checked + .form-field-tick__decoration-input::after {
+      background-color: inherit;
+      background-image: url("../img/signs/tick.svg");
+      width: 22px;
+    }
+  }
+}

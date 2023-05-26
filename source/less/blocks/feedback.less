@@ -1,0 +1,128 @@
+.feedback {
+  @media (min-width: @tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 120px 50px;
+  }
+}
+
+.feedback__wrapper {
+  padding: 36px 20px 28px;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    padding: 64px 120px 85px;
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 112px 260px 42px;
+  }
+}
+
+.feedback__text {
+  padding: 24px 20px 0;
+  border: none;
+}
+
+.feedback__button {
+  margin-bottom: 3px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: 320px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    width: 384px;
+  }
+}
+
+.feedback__note {
+  color: #33333399;
+  text-align: right;
+  font-size: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    font-size: 14px;
+  }
+}
+
+.feedback__container {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-gap: 100px;
+  }
+
+  &::before {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      width: 1px;
+      background-color: #dbdbdb;
+      top: 20px;
+      bottom: 40px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+}
+
+.feedback__title {
+  margin-bottom: 24px;
+  font-size: 18px;
+
+  @media (min-width: @tablet-width) {
+    letter-spacing: 1px;
+    font-size: 28px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 35px;
+  }
+}
+
+.feedback__buttons-area {
+  position: relative;
+  padding: 29px 20px 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 20px 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 809px;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 22px;
+  }
+}
+
+.feedback__br-mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.feedback__br-tablet {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
