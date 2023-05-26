@@ -22,37 +22,6 @@
     justify-content: space-between;
   }
 
-  &--closed {
-    .main-nav__item {
-      @media (max-width: @mobile-width-only) {
-        display: none;
-      }
-    }
-
-    .main-nav__toggle {
-      &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: #81b3d2;
-        height: 4px;
-        width: 23px;
-        box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
-      }
-
-      &:hover::after {
-        background-color: #81b3d299;
-        box-shadow: 0 9px 0 0 #81b3d299, 0 18px 0 0 #81b3d299;
-      }
-
-      &:active::after {
-        background-color: #80b2d14d;
-        box-shadow: 0 9px 0 0 #80b2d14d, 0 18px 0 0 #80b2d14d;
-      }
-    }
-  }
-
   &--opened .main-nav__toggle {
     background-image: url("../img/signs/icon-cross.svg");
     background-repeat: no-repeat;
@@ -99,11 +68,43 @@
   }
 }
 
+.main-nav--closed {
+  .main-nav__item {
+    @media (max-width: @mobile-width-only) {
+      display: none;
+    }
+  }
+
+  .main-nav__toggle {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #81b3d2;
+      height: 4px;
+      width: 23px;
+      box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
+    }
+
+    &:hover::after {
+      background-color: #81b3d299;
+      box-shadow: 0 9px 0 0 #81b3d299, 0 18px 0 0 #81b3d299;
+    }
+
+    &:active::after {
+      background-color: #80b2d14d;
+      box-shadow: 0 9px 0 0 #80b2d14d, 0 18px 0 0 #80b2d14d;
+    }
+  }
+}
+
 .main-nav__list {
   .clear-list;
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 

@@ -10,6 +10,10 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff" type="font/woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -107,17 +111,17 @@
             <div class="form-container-tick__wrapper">
               <div class="form-container-tick__item form-container-tick__item--radio form-field-tick">
                 <input class="visually-hidden form-field-tick__input" type="radio" name="mark" value="good" id="good" checked>
-                <span class="form-field-tick__decoration-input"></span>
+                <span class="form-field-tick__decoration-input" tabindex="0"></span>
                 <label class="form-field-tick__input-area" for="good">Скорее положительное</label>
               </div>
               <div class="form-container-tick__item form-container-tick__item--radio form-field-tick">
                 <input class="visually-hidden form-field-tick__input" type="radio" name="mark" value="bad" id="bad">
-                <span class="form-field-tick__decoration-input"></span>
+                <span class="form-field-tick__decoration-input" tabindex="0"></span>
                 <label class="form-field-tick__input-area" for="bad">Скорее отрицательное</label>
               </div>
               <div class="form-container-tick__item form-container-tick__item--radio form-field-tick">
                 <input class="visually-hidden form-field-tick__input" type="radio" name="mark" value="nothing" id="nothing">
-                <span class="form-field-tick__decoration-input"></span>
+                <span class="form-field-tick__decoration-input" tabindex="0"></span>
                 <label class="form-field-tick__input-area" for="nothing">Затрудняюсь ответить</label>
               </div>
             </div>
@@ -128,24 +132,25 @@
               <div class="form-container-tick__item form-field-tick">
                 <input class="visually-hidden form-field-tick__input form-field-tick__input--checkbox" type="checkbox" name="devilsbridge" value="devilsbridge"
                   id="devilsbridge" checked>
-                  <span class="form-field-tick__decoration-input form-field-tick__decoration-input--checkbox"></span>
+                  <span class="form-field-tick__decoration-input form-field-tick__decoration-input--checkbox" tabindex="0"></span>
                 <label class="form-field-tick__input-area" for="devilsbridge">Мост Дьявола</label>
               </div>
               <div class="form-container-tick__item form-field-tick">
-                <input class="visually-hidden form-field-tick__input form-field-tick__input--checkbox" type="checkbox" name="mountbell" value="mountbell" id="mountbell"
+                <input class="visually-hidden form-field-tick__input form-field-tick__input--checkbox" tabindex type="checkbox" name="mountbell" value="mountbell" id="mountbell"
                   checked>
-                  <span class="form-field-tick__decoration-input form-field-tick__decoration-input--checkbox"></span>
+                  <span class="form-field-tick__decoration-input form-field-tick__decoration-input--checkbox" tabindex="0"></span>
                 <label class="form-field-tick__input-area" for="mountbell">Гора-Колокол</label>
               </div>
+
               <div class="form-container-tick__item form-field-tick">
                 <input class="visually-hidden form-field-tick__input form-field-tick__input--checkbox" type="checkbox" name="slidepark" value="slidepark" id="slidepark"
                   checked>
-                  <span class="form-field-tick__decoration-input form-field-tick__decoration-input--checkbox"></span>
+                  <span class="form-field-tick__decoration-input form-field-tick__decoration-input--checkbox" tabindex="0"></span>
                 <label class="form-field-tick__input-area" for="slidepark">Слайд-парк</label>
               </div>
               <div class="form-container-tick__item form-field-tick">
                 <input class="visually-hidden form-field-tick__input form-field-tick__input--checkbox" type="checkbox" name="redrocks" value="redrocks" id="redrocks">
-                <span class="form-field-tick__decoration-input form-field-tick__decoration-input--checkbox"></span>
+                <span class="form-field-tick__decoration-input form-field-tick__decoration-input--checkbox" tabindex="0"></span>
                 <label class="form-field-tick__input-area" for="redrocks">Красные скалы</label>
               </div>
             </div>
